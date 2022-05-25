@@ -140,7 +140,7 @@ After adding the js-cloudimage-responsive library, simply iniatialise it with yo
 <script>
     const ciResponsive = new window.CIResponsive({
       token: 'demo',
-      baseURL: 'https://cdn.scaleflex.it/demo/' // optional
+      baseURL: 'https://www.fasterize.com/images' // optional
     });
 </script>
 ```
@@ -153,7 +153,7 @@ import 'js-cloudimage-responsive';
 
 const ciResponsive = new window.CIResponsive({
   token: 'demo',
-  baseURL: 'https://cdn.scaleflex.it/demo/' // optional
+  baseURL: 'https://www.fasterize.com/images' // optional
 });
 ```
 
