@@ -61,7 +61,6 @@ you can check this all-in-one Digital Asset Management solution
 * [Lazy loading](#lazy_loading)
 * [Process dynamically loaded images](#dynamically-loaded)
 * [Browser support](#browser_support)
-* [Filerobot UI Family](#ui_family)
 * [Contributing](#contributing)
 * [License](#license)
 
