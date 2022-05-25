@@ -11,7 +11,7 @@
 * [__Plain (CSS free)__](https://github.com/fasterize/js-cloudimage-responsive/blob/master/README-PLAIN.md)
 
 <h1 align="center">
-   JS EdgePic Responsive | Cloudimage v7
+   JS EdgePic Responsive (based on Cloudimage v7)
 </h1>
 
 <h3 align="center">
@@ -35,7 +35,7 @@
 This plugin detects the width of any image container as well as the device pixel ratio
 density to load the optimal image size needed.
 Images are resized on-the-fly via the <a href="https://edgepic.io" target="_blank">EdgePic service</a>, thus offering a comprehensive
-automated image optimization service.
+automated image optimization service. This plugin is still heaviliy based on Cloudimage responsive plugin.
 
 When an image is first loaded on your website or mobile app,
 EdgePic's resizing servers will download the origin image from
@@ -47,12 +47,6 @@ or storage bucket (S3, Google Cloud, Azure Blob...) reachable over
 HTTP or HTTPS by EdgePic. If you want to store your master images with another solution,
 you can check this all-in-one Digital Asset Management solution
 [Filerobot](https://www.filerobot.com/).
-
-<p align="center">
-	<img
-		alt="The Lounge"
-		src="https://cdn.scaleflex.it/filerobot/cloudimage-process.jpg">
-</p>
 
 ## <a name="table_of_contents"></a> Table of contents
 
