@@ -7,24 +7,11 @@
 ## VERSIONS
 
 * __Low Quality Preview__
-* [__Blur Hash__](https://github.com/scaleflex/js-cloudimage-responsive/blob/master/README-BLUR-HASH.md)
-* [__Plain (CSS free)__](https://github.com/scaleflex/js-cloudimage-responsive/blob/master/README-PLAIN.md)
-
-<p align="center">
-<a href="https://www.cloudimage.io/#gh-light-mode-only">
-		<img
-			alt="cloudimage logo"
-			src="https://scaleflex.cloudimg.io/v7/cloudimage.io/LOGO+WITH+SCALEFLEX-01.png?vh=f6080d&w=350">
-	</a>
-		<a href="https://www.cloudimage.io/#gh-dark-mode-only">
-		<img
-			alt="cloudimage logo"
-			src="https://scaleflex.cloudimg.io/v7/cloudimage.io/cloudimage-logo-light.png?vh=b798ab&w=350">
-	</a>
-</p>
+* [__Blur Hash__](https://github.com/fasterize/js-cloudimage-responsive/blob/master/README-BLUR-HASH.md)
+* [__Plain (CSS free)__](https://github.com/fasterize/js-cloudimage-responsive/blob/master/README-PLAIN.md)
 
 <h1 align="center">
-   JS Cloudimage Responsive | Cloudimage v7
+   JS EdgePic Responsive | Cloudimage v7
 </h1>
 
 <h3 align="center">
@@ -35,9 +22,9 @@
 	<strong>
 		<a href="#table_of_contents">Docs</a>
 		•
-    <a href="https://github.com/scaleflex/js-cloudimage-responsive/blob/v7/README_v6.md" target="_blank">Documentation for v2 | Cloudimage v6</a>
+    <a href="https://github.com/fasterize/js-cloudimage-responsive/blob/v7/README_v6.md" target="_blank">Documentation for v2 | Cloudimage v6</a>
     •
-		<a href="https://scaleflex.github.io/js-cloudimage-responsive/" target="_blank">Demo</a>
+		<a href="https://fasterize.github.io/js-cloudimage-responsive/" target="_blank">Demo</a>
 		•
 		<a href="https://codesandbox.io/s/js-cloudimage-responsive-example-2kkbz4" target="_blank">Code Sandbox</a>
     •
@@ -47,18 +34,18 @@
 
 This plugin detects the width of any image container as well as the device pixel ratio
 density to load the optimal image size needed.
-Images are resized on-the-fly via the <a href="https://cloudimage.io" target="_blank">Cloudimage service</a>, thus offering a comprehensive
+Images are resized on-the-fly via the <a href="https://edgepic.io" target="_blank">EdgePic service</a>, thus offering a comprehensive
 automated image optimization service.
 
 When an image is first loaded on your website or mobile app,
-Cloudimage's resizing servers will download the origin image from
-the source, resize it for the client's screen size and deliver to your users through one or multiple
+EdgePic's resizing servers will download the origin image from
+the source, resize it for the client's screen size and deliver to your users through Fasterize 
 Content Delivery Networks (CDNs). The generated image formats are cached in the CDN and will be delivered rocket fast on any subsequent request.
 
 **NOTE:** Your original (master) images have to be stored on a server
 or storage bucket (S3, Google Cloud, Azure Blob...) reachable over
-HTTP or HTTPS by Cloudimage. If you want to store your master images with us,
-you can check our all-in-one Digital Asset Management solution
+HTTP or HTTPS by EdgePic. If you want to store your master images with another solution,
+you can check this all-in-one Digital Asset Management solution
 [Filerobot](https://www.filerobot.com/).
 
 <p align="center">
@@ -87,45 +74,42 @@ you can check our all-in-one Digital Asset Management solution
 
 ## <a name="demo"></a> Demo
 
-To see the Cloudimage Responsive plugin in action, please check out the
-[Demo page](https://scaleflex.github.io/js-cloudimage-responsive/).
+To see the EdgePic Responsive plugin in action, please check out the
+[Demo page](https://fasterize.github.io/js-cloudimage-responsive/).
 Play with your browser's window size and observe your
-Inspector's Network tab to see how Cloudimage delivers the optimal
+Inspector's Network tab to see how EdgePic delivers the optimal
 image size to your browser, hence accelerating the overall page
 loading time.
 
 ## <a name="plugin_family"></a> Responsive plugins family
-In order to use Cloudimage responsive plugins on your single-page application, please check out Cloudimage responsive plugins for the most popular Javascript frameworks.
+In order to use EdgePic responsive plugins on your single-page application, please check out EdgePic responsive plugins for the most popular Javascript frameworks.
 
 <details>
 <summary>React</summary>
-<a href="https://github.com/scaleflex/react-cloudimage-responsive">React Cloudimage Responsive (Low Quality Preview)</a><br/>
-<a href="https://github.com/scaleflex/react-cloudimage-responsive-blur-hash">React Cloudimage Responsive (Blur-hash)</a><br/>
-<a href="https://github.com/scaleflex/react-cloudimage-responsive-plain">React Cloudimage Responsive (Plain)</a>
+<a href="https://github.com/fasterize/react-cloudimage-responsive">React EdgePic Responsive (Low Quality Preview)</a><br/>
+<a href="https://github.com/fasterize/react-cloudimage-responsive-blur-hash">React EdgePic Responsive (Blur-hash)</a><br/>
+<a href="https://github.com/fasterize/react-cloudimage-responsive-plain">React EdgePic Responsive (Plain)</a>
 </details>
 
 <details>
 <summary>Vue.js</summary>
-<a href="https://github.com/scaleflex/vue-cloudimage-responsive">Vue Cloudimage Responsive (Low Quality Preview)</a><br/>
-<a href="https://github.com/scaleflex/vue-cloudimage-responsive-blur-hash">Vue Cloudimage Responsive (Blur-hash)</a><br/>
-<a href="https://github.com/scaleflex/vue-cloudimage-responsive-plain">Vue Cloudimage Responsive (Plain)</a>
+<a href="https://github.com/fasterize/vue-cloudimage-responsive">Vue EdgePic Responsive (Low Quality Preview)</a><br/>
+<a href="https://github.com/fasterize/vue-cloudimage-responsive-blur-hash">Vue EdgePic Responsive (Blur-hash)</a><br/>
+<a href="https://github.com/fasterize/vue-cloudimage-responsive-plain">Vue EdgePic Responsive (Plain)</a>
 </details>
 
 <details>
 <summary>Angular</summary>
-<a href="https://github.com/scaleflex/ng-cloudimage-responsive">Angular Cloudimage Responsive (Low Quality Preview)</a><br/>
+<a href="https://github.com/fasterize/ng-cloudimage-responsive">Angular EdgePic Responsive (Low Quality Preview)</a><br/>
 </details>
 
 ## <a name="requirements"/> Requirements
 
-### Cloudimage account
+### EdgePic / Fasterize account
 
-To use the Cloudimage Responsive plugin, you will need a
-Cloudimage token to deliver your images over CDN. Don't worry, it only takes seconds to get one by
-registering [here](https://www.cloudimage.io/en/register_page).
+To use the EdgePic Responsive plugin, you will need a
+EdgePic token to deliver your images over CDN. Please contact [Fasterize support](support.fasterize.com/) to get an account.
 Once your token is created, you can configure it as described below.
-This token allows you to use 25GB of image cache and 25GB of worldwide
-CDN traffic per month for free.
 
 ### Layout/CSS
 
@@ -137,15 +121,15 @@ You have to pay attention to the following things:
 
 ## <a name="installation"></a>Step 1: Installation
 
-Add a style tag with CDN link to js-cloudimage-responsive in the head of your site
+Add a style tag with CDN link to js-edgepic-responsive in the head of your site
 
-```javascript
+```html
 <link rel="stylesheet" href="https://cdn.scaleflex.it/plugins/js-cloudimage-responsive/4.8.12/js-cloudimage-responsive.min.css?vh=a076ef&func=proxy"></link>
 ```
 
 Add a script tag with CDN link to js-cloudimage-responsive
 
-```javascript
+```html
 <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-responsive/4.8.12/js-cloudimage-responsive.min.js"></script>
 ```
 
@@ -212,10 +196,9 @@ Use `ci-bg-url` instead of the CSS background-image property `background-image: 
 
 ###### Type: **String** | Default: **"demo"** | _required_
 
-Your Cloudimage customer token.
-[Subscribe](https://www.cloudimage.io/en/register_page) for a
-Cloudimage account to get one. The subscription takes less than a
-minute and is totally free.
+Your EdgePic customer token.
+[Ask Fasterize Support](https://support.fasterize.com/) for a
+EdgePic account to get one.
 
 ### domain
 
@@ -227,7 +210,7 @@ Use your custom domain.
 
 ###### Type: **boolean** | Default: **false** | _optional_
 
-If you use a custom CNAME for your cloudimage integration, set it to true.
+If you use a custom CNAME for your EdgePic integration, set it to true.
 
 Note: this will disregard your token above as this should be built into the CNAME entry.
 
@@ -236,13 +219,13 @@ Note: this will disregard your token above as this should be built into the CNAM
 
 ###### Type: **String** | Default: **"ci-src"**
 
-Cloudimage Responsive Selector for images.
+EdgePic Responsive Selector for images.
 
 ### bgSelector
 
 ###### Type: **String** | Default: **"ci-bg-url"**
 
-Cloudimage Responsive Selector for background images.
+EdgePic Responsive Selector for background images.
 
 ### doNotReplaceURL
 
@@ -293,7 +276,7 @@ Only images close to the client's viewport will be loaded, hence accelerating th
 
 ###### Type: **String** | Default: **'org_if_sml=1'** | _optional_
 
-Applies default Cloudimage operations/filters to your image like brightness, contrast, rotation, etc.
+Applies default EdgePic operations/filters to your image like brightness, contrast, rotation, etc.
 Multiple params can be applied, separated by "```&```" e.g. wat_scale=35&wat_gravity=northeast&wat_pad=10&grey=1
 
 ```javascript
@@ -407,7 +390,7 @@ If width and height attributes are NOT set, image container size will be detecte
 
 ## <a name="image_properties"></a> Image properties
 
-The Cloudimage responsive plugin will make an image on your page responsive if you replace the `src` with a `ci-src` attribute in the `<img>` tag:
+The EdgePic responsive plugin will make an image on your page responsive if you replace the `src` with a `ci-src` attribute in the `<img>` tag:
 
 ### ci-src
 
@@ -417,7 +400,7 @@ Original image hosted on your web server. You can use absolute path or
 relative to the baseURL in your config.
 
 **NOTES:**
-* The plugin uses a special algorithm to detect the width of the image container and set the image size accordingly. This is the recommended way of using the Cloudimage Responsive plugin.
+* The plugin uses a special algorithm to detect the width of the image container and set the image size accordingly. This is the recommended way of using the EdgePic Responsive plugin.
 * Images where `ci-src` is not used will be delivered in a standard, non-responsive way.
 * Parameters after "?" question mark will be added at the end of result URL after processing by the plugin.
 
@@ -437,7 +420,7 @@ If it's set, the plugin will use height as fixed value and change only according
 
 ###### Type: **String** | Default: **undefined** | _optional_
 
-You can apply any Cloudimage operations/filters to your image, e.g. brightness, contrast, rotation...
+You can apply any EdgePic operations/filters to your image, e.g. brightness, contrast, rotation...
 Multiple parameters can be applied, separated by "```&```" e.g. **wat_scale=35&wat_gravity=northeast&wat_pad=10&grey=1**
 
 ```javascript
@@ -501,7 +484,7 @@ md: { w: '40vw', h: 350 } or md: { w: 250, h: '20vh' }
 adds a possibility to use fixed height or width and change the other dimension dynamically
 
 **NOTE:** if size is not set, the plugin uses a special algorithm to
-detect the width of image container and set the image size accordingly. This is the recommended way of using the Cloudimage Responsive plugin.
+detect the width of image container and set the image size accordingly. This is the recommended way of using the EdgePic Responsive plugin.
 
 ### ci-ratio (or data-ci-ratio)
 
@@ -509,7 +492,7 @@ detect the width of image container and set the image size accordingly. This is 
 
 It is recommended to set this parameter to prevent page layout jumping. It is used to calculate the image height to hold the image position while the image is loading.
 
-To see the full Cloudimage documentation, [click here](https://docs.cloudimage.io/go/cloudimage-documentation).
+To see the full EdgePic documentation, [click here](https://docs.cloudimage.io/go/cloudimage-documentation).
 
 ### ci-do-not-replace-url (or data-ci-do-not-replace-url)
 
@@ -593,11 +576,6 @@ NOTE: If you use lazy loading with IntersectionObserver, you must
 manually add the [IntersectionObserver polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill)
 for cross-browser support.
 
-## <a name="ui_family"></a>Filerobot UI Familiy
-* [Cloudimage Responsive](https://github.com/scaleflex/js-cloudimage-responsive)
-* [JS Cloudimage 360 view](https://github.com/scaleflex/js-cloudimage-360-view)
-* [Image Editor](https://github.com/scaleflex/filerobot-image-editor)
-* [Filerobot Media Asset Widget](https://scaleflex.cloudimg.io/v7/plugins/filerobot-widget/demo/index.html?vh=d6c246&func=proxy)
 
 ## <a name="contributing"></a>Contributing!
 
@@ -605,5 +583,5 @@ All contributions are super welcome!
 
 
 ## <a name="license"></a>License
-JS Cloudimage Responsive is provided under the [MIT License](https://opensource.org/licenses/MIT).
+JS EdgePic Responsive is provided under the [MIT License](https://opensource.org/licenses/MIT).
 
