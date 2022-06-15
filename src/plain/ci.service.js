@@ -137,11 +137,27 @@ export default class CIResponsive {
       if (onImageLoad && typeof onImageLoad === 'function') {
         onImageLoad(imgNode);
       }
-      addClass(imgNode, 'ci-image-loaded');
+      addClass(imgNode, "frz-image-loaded");
     };
 
-    setSrcset(imgNode, cloudimageSrcset, 'data-srcset', lazy, src, isSVG, dataSrcAttr);
-    setSrc(imgNode, cloudimageUrl, 'data-src', lazy, src, isSVG, dataSrcAttr);
+    setSrcset(
+      imgNode,
+      cloudimageSrcset,
+      "data-frz-srcset",
+      lazy,
+      src,
+      isSVG,
+      dataSrcAttr
+    );
+    setSrc(
+      imgNode,
+      cloudimageUrl,
+      "data-frz-src",
+      lazy,
+      src,
+      isSVG,
+      dataSrcAttr
+    );
   }
 
   processBackgroundImage(props) {

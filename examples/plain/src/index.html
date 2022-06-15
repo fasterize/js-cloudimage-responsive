@@ -89,8 +89,8 @@
         <div class="sea-coast container">
           <img
             id="hero-section-image"
-            ci-params="ci_info=2"
-            ci-src="Main+image.jpg?vh=a1983b"
+            data-frz-params="ci_info=2"
+            data-frz-src="/demo/Main+image.jpg?vh=a1983b"
             alt="sea-coast"
           />
           <div class="image-size-wrapper">
@@ -188,10 +188,10 @@
         <div class="image-wrapper">
           <div class="first-column-image">
             <img
-              ci-src="House+img.jpg?vh=25e04c"
+              data-frz-src="/demo/House+img.jpg?vh=25e04c"
               alt="img"
               id="left-column-image"
-              ci-params="ci_info=2"
+              data-frz-params="ci_info=2"
             />
             <div class="image-size-wrapper">
               <div class="text">
@@ -203,10 +203,10 @@
             <div class="square-with-circle-img">
               <div class="second-column-image hide-in-mobile">
                 <img
-                  ci-src="Church+square+img.jpg?vh=d8a035"
+                  data-frz-src="/demo/Church+square+img.jpg?vh=d8a035"
                   alt="img"
                   id="right-column-first-image"
-                  ci-params="ci_info=2"
+                  data-frz-params="ci_info=2"
                 />
                 <div class="image-size-wrapper">
                   <p class="text">
@@ -217,9 +217,9 @@
               <div class="circle-image-wrapper">
                 <img
                   class="ellipse-image"
-                  ci-src="Girl+img.jpg?vh=ad5847"
+                  data-frz-src="/demo/Girl+img.jpg?vh=ad5847"
                   alt="img"
-                  ci-params="w=265&h=265&gravity=north"
+                  data-frz-params="w=265&h=265&gravity=north"
                   id="right-column-second-image"
                   style="border-radius: 50%;"
                 />
@@ -235,9 +235,9 @@
             <div class="horizontal-image">
               <img
                 id="first-horizontal-image"
-                ci-src="Dresses+img.jpg?vh=59404a"
+                data-frz-src="/demo/Dresses+img.jpg?vh=59404a"
                 alt="img"
-                ci-params="ci_info=2"
+                data-frz-params="ci_info=2"
               />
               <div class="image-size-wrapper">
                 <p class="text">
@@ -249,10 +249,10 @@
         </div>
         <div class="mobile-screen-horizontal-image">
           <img
-            ci-src="Dresses+img.jpg?vh=59404a"
+            data-frz-src="/demo/Dresses+img.jpg?vh=59404a"
             alt="img"
             id="second-horizontal-image"
-            ci-params="ci_info=2"
+            data-frz-params="ci_info=2"
           />
           <div class="image-size-wrapper">
             <p class="text">
@@ -274,8 +274,8 @@
             <h3>Original Image</h3>
             <p>Resize your browser's window to see how it works.</p>
             <img
-              ci-params="func=fit&w=400&h=400&bg_colour=f2f7fa"
-              ci-src="shayna-douglas-VibRcV8tMDM-unsplash.jpg?vh=feb096"
+              data-frz-params="func=fit&w=400&h=400&bg_colour=f2f7fa"
+              data-frz-src="/demo/shayna-douglas-VibRcV8tMDM-unsplash.jpg?vh=feb096"
               alt="car-image"
             />
             <pre class="original-image-code-block">
@@ -290,14 +290,14 @@
               A simple crop cuts the same part from every side.
             </p>
             <img
-              ci-src="shayna-douglas-VibRcV8tMDM-unsplash.jpg?vh=feb096"
-              ci-params="func=crop&w=400&h=400"
+              data-frz-src="/demo/shayna-douglas-VibRcV8tMDM-unsplash.jpg?vh=feb096"
+              data-frz-params="func=crop&w=400&h=400"
               alt="unsplash-image"
             />
             <pre class="original-image-code-block">
 &lt;<span class="code-yellow-color">img</span>
-  <span class="code-yellow-color">ci-src</span>="<span class="code-blue-color">unsplash.jpg</span>"
-  <span class="code-yellow-color">ci-params</span>="func=crop&w=400&h=400"
+  <span class="code-yellow-color">data-frz-src</span>="<span class="code-blue-color">unsplash.jpg</span>"
+  <span class="code-yellow-color">data-frz-params</span>="func=crop&w=400&h=400"
 /&gt;
 </pre>
           </div>
@@ -308,14 +308,14 @@
               it turns out strictly in the center.
             </p>
             <img
-              ci-params="w=400&h=400&func=crop&gravity=auto"
-              ci-src="shayna-douglas-VibRcV8tMDM-unsplash.jpg?vh=feb096"
+              data-frz-params="w=400&h=400&func=crop&gravity=auto"
+              data-frz-src="/demo/shayna-douglas-VibRcV8tMDM-unsplash.jpg?vh=feb096"
               alt="car-image"
             />
             <pre class="original-image-code-block">
 <span class="code-yellow-color">&lt;img</span>
-  <span class="code-yellow-color">ci-src</span>="<span class="code-blue-color">unsplash.jpg</span>"
-  <span class="code-yellow-color">ci-params</span>="func=crop&w=400&h=400&gravity=auto"
+  <span class="code-yellow-color">data-frz-src</span>="<span class="code-blue-color">unsplash.jpg</span>"
+  <span class="code-yellow-color">data-frz-params</span>="func=crop&w=400&h=400&gravity=auto"
 /&gt;
               </pre>
           </div>
@@ -325,7 +325,7 @@
 
     <section
       class="background-images-section"
-      ci-bg-url="BG+image.jpg?vh=397cef"
+      data-frz-bg-url="BG+image.jpg?vh=397cef"
     >
       <div class="images-content">
         <h2>Use with background images</h2>
@@ -336,8 +336,8 @@
           </div>
           <pre id="bg-code" class="code">
 &lt;div
-ci-bg-url="ameen-fahmy.jpg"
-ci-params="func=crop"
+data-frz-bg-url="ameen-fahmy.jpg"
+data-frz-params="func=crop"
 style="background:#000 50% 50% / cover no-repeat;color:#fff;"
 >
 ...your content...

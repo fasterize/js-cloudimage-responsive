@@ -17,15 +17,21 @@ export const filterImages = (images, type) => {
 };
 
 const getCommonImageProps = (image) => ({
-  sizes: getSize(attr(image, 'ci-sizes') || attr(image, 'data-ci-size') || {}) || undefined,
-  params: getParams(attr(image, 'ci-params') || attr(image, 'data-ci-params') || {}),
-  imgNodeRatio: attr(image, 'ci-ratio') || attr(image, 'data-ci-ratio') || undefined,
-  blurHash: attr(image, 'ci-blur-hash') || attr(image, 'data-ci-blur-hash') || undefined,
-  isLazyCanceled: (attr(image, 'ci-not-lazy') !== null || attr(image, 'data-ci-not-lazy') !== null) || undefined,
-  preserveSize: (attr(image, 'ci-preserve-size') !== null || attr(image, 'data-preserve-size') !== null) || undefined,
-  imgNodeWidth: attr(image, 'width'),
-  imgNodeHeight: attr(image, 'height'),
-  doNotReplaceImageUrl: isTrue(image, 'ci-do-not-replace-url')
+  sizes: getSize(attr(image, "data-frz-sizes") || {}) || undefined,
+  params: getParams(attr(image, "data-frz-params") || {}),
+  imgNodeRatio:
+    attr(image, "data-frz-ratio") ||
+    attr(image, "data-data-frz-ratio") ||
+    undefined,
+  blurHash: attr(image, "data-frz-blur-hash") || undefined,
+  isLazyCanceled: attr(image, "data-frz-not-lazy") !== null || undefined,
+  preserveSize:
+    attr(image, "data-frz-preserve-size") !== null ||
+    attr(image, "data-preserve-size") !== null ||
+    undefined,
+  imgNodeWidth: attr(image, "width"),
+  imgNodeHeight: attr(image, "height"),
+  doNotReplaceImageUrl: isTrue(image, "data-frz-do-not-replace-url"),
 });
 
 export const getParams = (params) => {
@@ -101,7 +107,10 @@ export const getBackgroundImageProps = (image, bgSelector) => {
   const props = {
     ...getCommonImageProps(image),
     imgNodeSRC: attr(image, bgSelector)|| undefined,
-    minWindowWidth: attr(image, 'ci-min-window-width') || attr(image, 'data-min-window-width') || undefined
+    minWindowWidth:
+      attr(image, "data-frz-min-window-width") ||
+      attr(image, "data-min-window-width") ||
+      undefined,
   };
   const params = {
     ...getParamsFromURL(props.imgNodeSRC || ''),
@@ -134,9 +143,15 @@ export const addClass = (elem, className) => {
 };
 
 export const getWrapper = (image) => {
-  if ((image.parentNode.className || '').indexOf('ci-image-wrapper') > -1) {
+  if (
+    (image.parentNode.className || "").indexOf("data-frz-image-wrapper") > -1
+  ) {
     return image.parentNode;
-  } else if ((image.parentNode.parentNode.className || '').indexOf('ci-image-wrapper') > -1) {
+  } else if (
+    (image.parentNode.parentNode.className || "").indexOf(
+      "data-frz-image-wrapper"
+    ) > -1
+  ) {
     return image.parentNode.parentNode;
   }
 };
@@ -186,8 +201,14 @@ export const getFreshCIElements = (isUpdate, rootElement, imgSelector, bgSelecto
     images = rootElement.querySelectorAll(`img[${imgSelector}]`);
     backgroundImages = rootElement.querySelectorAll(`[${bgSelector}]`);
   } else {
-    images = filterImages(rootElement.querySelectorAll(`img[${imgSelector}]`), 'ci-image');
-    backgroundImages = filterImages(rootElement.querySelectorAll(`[${bgSelector}]`), 'ci-bg');
+    images = filterImages(
+      rootElement.querySelectorAll(`img[${imgSelector}]`),
+      "frz-image"
+    );
+    backgroundImages = filterImages(
+      rootElement.querySelectorAll(`[${bgSelector}]`),
+      "frz-bg"
+    );
   }
 
   return [images, backgroundImages];
