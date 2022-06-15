@@ -34,6 +34,9 @@ module.exports = {
       }
     ]
   },
+  optimization: {
+    minimize: false,
+  },
   plugins: [
     new webpack.BannerPlugin(banner),
   ],
